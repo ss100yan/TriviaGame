@@ -1,7 +1,7 @@
 // timer countdown
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
-    setInterval(function () {
+    myVar=setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -12,12 +12,16 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             timer = duration;
-        }
+        };
+         if (timer == 0) {myStopFunction();};
     }, 1000);
 }
 
 jQuery(function ($) {
-    var fiveMinutes = 60 * 1.34,
+    var fiveMinutes = 60 * 1.3434,
         display = $('#time');
     startTimer(fiveMinutes, display);
 });
+function myStopFunction() {
+    clearInterval(myVar);
+  }
