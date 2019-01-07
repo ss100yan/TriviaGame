@@ -24,4 +24,28 @@ jQuery(function ($) {
 });
 function myStopFunction() {
     clearInterval(myVar);
+    isChecked ();
   }
+
+      var correct = 0;
+      var wrong = 0;
+function isChecked (){
+    var Q1Yes = document.getElementById('q1-yes').checked ;
+    var Q2Yes = document.getElementById('q2-yes').checked ;
+    var Q3Yes = document.getElementById('q3-yes').checked ;
+    var Q4Yes = document.getElementById('q4-yes').checked ;
+    var Q5Yes = document.getElementById('q5-yes').checked ;
+    var Q6Yes = document.getElementById('q6-yes').checked ;
+    var Q7Yes = document.getElementById('q7-yes').checked ;
+
+    if ( Q1Yes == true ) {correct++;} else {wrong++;}
+    if ( Q2Yes == true ) {correct++;} else {wrong++;}
+    if ( Q3Yes == true ) {correct++;} else {wrong++;}
+    if ( Q4Yes == true ) {correct++;} else {wrong++;}
+    if ( Q5Yes == true ) {correct++;} else {wrong++;}
+    if ( Q6Yes == true ) {correct++;} else {wrong++;}
+    if ( Q7Yes == true ) {correct++;} else {wrong++;}
+
+    alert("Correct answers:"+correct +"     "+"Wrong answers:"+ wrong);
+};
+

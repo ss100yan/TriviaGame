@@ -18,76 +18,84 @@
             <div class="row"> <div class="col-12"><br><br></div></div>
             <div class="row"> <div class="col-12"><h1 class="text-center" style="font-family: 'Fredericka the Great', cursive;">Time left : <span id="time"></span></h1></div></div>
             <div class="row"> <div class="col-12"><br><br></div></div>
+
+             <form action="" method="GET" onsubmit=" return isChecked()">
 <div class="row">
   <div class="col-2"></div>
     <div class="col-8" >
       <div>
         <h4>Java script is a :</h4>
-         <INPUT TYPE="radio" NAME="q1" VALUE="y">Coffe drink
-           <INPUT TYPE="radio" NAME="q1" VALUE="y">Programing Language
-             <INPUT TYPE="radio" NAME="q1" VALUE="y">Data base
-               <INPUT TYPE="radio" NAME="q1" VALUE="y">Tesla model
-                 <INPUT TYPE="radio" NAME="q1" VALUE="y">None of the above
+         <INPUT TYPE="radio" NAME="q1" VALUE="n" >Coffe drink
+           <INPUT TYPE="radio" NAME="q1" VALUE="y" id="q1-yes">Programing Language
+             <INPUT TYPE="radio" NAME="q1" VALUE="n">Data base
+               <INPUT TYPE="radio" NAME="q1" VALUE="n">Tesla model
+                 <INPUT TYPE="radio" NAME="q1" VALUE="n">None of the above
                   </div>
                   <br><br>
                   <div>
                     <h4>Function in a object its called :</h4>
-                     <INPUT TYPE="radio" NAME="q1" VALUE="y">Microsoft
-                       <INPUT TYPE="radio" NAME="q1" VALUE="y">Jquery
-                         <INPUT TYPE="radio" NAME="q1" VALUE="y">Variable
-                           <INPUT TYPE="radio" NAME="q1" VALUE="y">Method
-                             <INPUT TYPE="radio" NAME="q1" VALUE="y">None of the above
+                     <INPUT TYPE="radio" NAME="q2" VALUE="n">Microsoft
+                       <INPUT TYPE="radio" NAME="q2" VALUE="n">Jquery
+                         <INPUT TYPE="radio" NAME="q2" VALUE="n">Variable
+                           <INPUT TYPE="radio" NAME="q2" VALUE="y"id="q2-yes">Method
+                             <INPUT TYPE="radio" NAME="q2" VALUE="n">None of the above
                               </div>
                               <br><br>
                   <div>
                     <h4>I tunes is owned by :</h4>
-                     <INPUT TYPE="radio" NAME="q1" VALUE="y">Blackberry
-                       <INPUT TYPE="radio" NAME="q1" VALUE="y">Srawberry
-                         <INPUT TYPE="radio" NAME="q1" VALUE="y">Apple
-                           <INPUT TYPE="radio" NAME="q1" VALUE="y">Pear
-                             <INPUT TYPE="radio" NAME="q1" VALUE="y">None of the above
+                     <INPUT TYPE="radio" NAME="q7" VALUE="n">Blackberry
+                       <INPUT TYPE="radio" NAME="q7" VALUE="n">Srawberry
+                         <INPUT TYPE="radio" NAME="q7" VALUE="y" id="q7-yes">Apple
+                           <INPUT TYPE="radio" NAME="q7" VALUE="n">Pear
+                             <INPUT TYPE="radio" NAME="q7" VALUE="n">None of the above
                               </div>
                               <br><br>
                               <div>
                                 <h4>&int;e<sup>x</sup>dx=?</h4>
-                                 <INPUT TYPE="radio" NAME="q1" VALUE="y">      e<sup>x</sup>
-                                   <INPUT TYPE="radio" NAME="q1" VALUE="y">      x
-                                     <INPUT TYPE="radio" NAME="q1" VALUE="y">      e
-                                       <INPUT TYPE="radio" NAME="q1" VALUE="y">      1
-                                         <INPUT TYPE="radio" NAME="q1" VALUE="y">None of the above
+                                 <INPUT TYPE="radio" NAME="q3" VALUE="y" id="q3-yes">      e<sup>x</sup>
+                                   <INPUT TYPE="radio" NAME="q3" VALUE="n">      x
+                                     <INPUT TYPE="radio" NAME="q3" VALUE="n">      e
+                                       <INPUT TYPE="radio" NAME="q3" VALUE="n">      1
+                                         <INPUT TYPE="radio" NAME="q3" VALUE="n">None of the above
                                           </div>
                                           <br><br>
                               <div>
                                 <h4>Albert Einstein discovres:</h4>
-                                 <INPUT TYPE="radio" NAME="q1" VALUE="y"> Theory of relativity
-                                   <INPUT TYPE="radio" NAME="q1" VALUE="y"> The law of gravity
-                                     <INPUT TYPE="radio" NAME="q1" VALUE="y"> Magnetic induction
-                                       <INPUT TYPE="radio" NAME="q1" VALUE="y"> Nuclear forces
-                                         <INPUT TYPE="radio" NAME="q1" VALUE="y">None of the above
+                                 <INPUT TYPE="radio" NAME="q4" VALUE="y" id="q4-yes"> Theory of relativity
+                                   <INPUT TYPE="radio" NAME="q4" VALUE="n"> The law of gravity
+                                     <INPUT TYPE="radio" NAME="q4" VALUE="n"> Magnetic induction
+                                       <INPUT TYPE="radio" NAME="q4" VALUE="n"> Nuclear forces
+                                         <INPUT TYPE="radio" NAME="q4" VALUE="n">None of the above
                                           </div>
                                           <br><br>
                                           <div>
-                                              <h4>Tesla is:</h4>
-                                               <INPUT TYPE="radio" NAME="q1" VALUE="y"> Derived unit of the magnetic field strength
-                                                 <INPUT TYPE="radio" NAME="q1" VALUE="y"> Make of electric cars
-                                                   <INPUT TYPE="radio" NAME="q1" VALUE="y"> Famous physicist
-                                                       <INPUT TYPE="radio" NAME="q1" VALUE="y">All of the above
+                                              <h4>Black mirror series is on:</h4>
+                                               <INPUT TYPE="radio" NAME="q5" VALUE="y" id="q5-yes"> Netflix
+                                                 <INPUT TYPE="radio" NAME="q5" VALUE="n"> Amazon
+                                                   <INPUT TYPE="radio" NAME="q5" VALUE="n"> Hullu
+                                                       <INPUT TYPE="radio" NAME="q5" VALUE="n">HBO
+                                                        <INPUT TYPE="radio" NAME="q5" VALUE="n">None of the above
                                                         </div>
                                                         <br><br>
                                                         <div>
                                                         <h4>React is developed by:</h4>
-                                               <INPUT TYPE="radio" NAME="q1" VALUE="y">Facebook
-                                                 <INPUT TYPE="radio" NAME="q1" VALUE="y"> Google
-                                                   <INPUT TYPE="radio" NAME="q1" VALUE="y"> Yahoo
-                                                    <INPUT TYPE="radio" NAME="q1" VALUE="y"> Twiter
-                                                       <INPUT TYPE="radio" NAME="q1" VALUE="y">None of the above
+                                               <INPUT TYPE="radio" NAME="q6" VALUE="y" id="q6-yes">Facebook
+                                                 <INPUT TYPE="radio" NAME="q6" VALUE="n"> Google
+                                                   <INPUT TYPE="radio" NAME="q6" VALUE="n"> Yahoo
+                                                    <INPUT TYPE="radio" NAME="q6" VALUE="n"> Twiter
+                                                       <INPUT TYPE="radio" NAME="q6" VALUE="n">None of the above
                                                         </div>
                                                         <br><br>
                                                         
                    <div class="col-2"></div>
                    
                     </div>
-                    
+
+                  </div>
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <input type="submit" value="submit"/>
+                      </form>
                     
 </body>
 </html>
