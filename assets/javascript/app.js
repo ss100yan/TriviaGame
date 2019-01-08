@@ -29,6 +29,7 @@ function myStopFunction() {
 
       var correct = 0;
       var wrong = 0;
+      var unanswerd=0;
 function isChecked (){
     var Q1Yes = document.getElementById('q1-yes').checked ;
     var Q2Yes = document.getElementById('q2-yes').checked ;
@@ -38,14 +39,22 @@ function isChecked (){
     var Q6Yes = document.getElementById('q6-yes').checked ;
     var Q7Yes = document.getElementById('q7-yes').checked ;
 
-    if ( Q1Yes == true ) {correct++;} else {wrong++;}
-    if ( Q2Yes == true ) {correct++;} else {wrong++;}
-    if ( Q3Yes == true ) {correct++;} else {wrong++;}
-    if ( Q4Yes == true ) {correct++;} else {wrong++;}
-    if ( Q5Yes == true ) {correct++;} else {wrong++;}
-    if ( Q6Yes == true ) {correct++;} else {wrong++;}
-    if ( Q7Yes == true ) {correct++;} else {wrong++;}
+    var Q1No = document.getElementById('q1-no').checked ;
+    var Q2No = document.getElementById('q2-no').checked ;
+    var Q3No = document.getElementById('q3-no').checked ;
+    var Q4No = document.getElementById('q4-no').checked ;
+    var Q5No = document.getElementById('q5-no').checked ;
+    var Q6No = document.getElementById('q6-no').checked ;
+    var Q7No = document.getElementById('q7-no').checked ;
 
-    alert("Correct answers:"+correct +"     "+"Wrong answers:"+ wrong);
+    if ( Q1Yes == true ) {correct++;} else if (Q1No == true){wrong++;}else {unanswerd++;};
+    if ( Q2Yes == true ) {correct++;} else if (Q2No == true){wrong++;}else {unanswerd++;};
+    if ( Q3Yes == true ) {correct++;} else if (Q3No == true){wrong++;}else {unanswerd++;};
+    if ( Q4Yes == true ) {correct++;} else if (Q4No == true){wrong++;}else {unanswerd++;};
+    if ( Q5Yes == true ) {correct++;} else if (Q5No == true){wrong++;}else {unanswerd++;};
+    if ( Q6Yes == true ) {correct++;} else if (Q6No == true){wrong++;}else {unanswerd++;};
+    if ( Q7Yes == true ) {correct++;} else if (Q7No == true){wrong++;}else {unanswerd++;};
+
+    alert("Correct answers:"+correct +"   "+"Wrong answers:"+ wrong + "   "+ "Unanswerd:"+unanswerd);
 };
 
