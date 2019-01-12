@@ -1,5 +1,12 @@
 // timer countdown
 $(document).ready(function() {
+
+    $('#startButton').click(function() {
+        $('#bannerStart').hide();
+        startTimer(fiveMinutes, display);
+
+    });
+    
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     myVar=setInterval(function () {
@@ -18,11 +25,11 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-jQuery(function ($) {
+// jQuery(function ($) {
     var fiveMinutes = 60 * 1.2,
         display = $('#time');
-    startTimer(fiveMinutes, display);
-});
+    
+// });
 function myStopFunction() {
     clearInterval(myVar);
     isChecked ();
@@ -63,6 +70,9 @@ function isChecked (){
     $('#wa').text(wrong);
     $('#ua').text(unanswerd);
 };
+
+
+
 
 $('#test').click(function() {
     myStopFunction()

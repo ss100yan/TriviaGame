@@ -17,10 +17,10 @@ body{
 #banner {
     position: fixed;
     z-index: 999;
-    top: 50px;
-    left: 50px;
-    height: 420px;
-    width: 1024px;
+    top: 14%;
+    left: 14%;
+    height: 60%;
+    width: 70%;
     background-image: url("memphis-colorful.png")
 }
 
@@ -37,3 +37,108 @@ body{
 h3{
     text-align: center;
 }
+#bannerStart {
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url("memphis-colorful.png")
+}
+/* 
+#test{
+
+    background-color: white;
+    border: 2px solid purple;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   } */
+
+   #startButton {
+    position: relative;
+    top: 40%;
+    left: 40%;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #startButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #startButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #startButton:hover span {
+    padding-right: 25px;
+  }
+  
+  #startButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #test {
+   
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #test span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #test span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #test:hover span {
+    padding-right: 25px;
+  }
+  
+  #test:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
