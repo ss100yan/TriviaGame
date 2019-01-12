@@ -12,14 +12,25 @@
     <script src="assets/javascript/app.js"></script>
 </head>
 <body> 
-        
+  <div id="shadowbox"></div>
+  <div id="banner">
+      <!-- <div id="close">Close X</div> -->
+      <br><br><br><br><br>
+      <h3>Correct answers:<span id="ca"></span></h3>
+      <h3>Wrong answers:<span id="wa"></span></h3>
+      <h3>Unanswerd:<span id="ua"></span></h3>
+  </div>
+  
+ 
+ 
+  
             <iframe src="assets/music/bensound-straight.mp3" allow="autoplay" style="display:none" id="iframeAudio">
             </iframe> 
             <div class="row"> <div class="col-12"><br><br></div></div>
             <div class="row"> <div class="col-12"><h1 class="text-center" style="font-family: 'Fredericka the Great', cursive;">Time left : <span id="time"></span></h1></div></div>
             <div class="row"> <div class="col-12"><br><br></div></div>
 
-             <form action="" method="GET" onsubmit="return isChecked()">
+             <!-- <form action="" method="GET" onsubmit="return myStopFunction()"> -->
 <div class="row">
   <div class="col-2"></div>
     <div class="col-8" >
@@ -94,8 +105,8 @@
                   </div>
                     <div class="row">
                         <div class="col-5"></div>
-                        <input type="submit" value="submit"/>
-                      </form>
+                        <input type="button" id="test" value="DONE">
+                      <!-- </form> -->
                     
 </body>
 </html>

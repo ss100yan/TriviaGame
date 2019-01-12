@@ -1,4 +1,5 @@
 // timer countdown
+$(document).ready(function() {
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     myVar=setInterval(function () {
@@ -25,6 +26,7 @@ jQuery(function ($) {
 function myStopFunction() {
     clearInterval(myVar);
     isChecked ();
+    $('#shadowbox, #banner').show();  
   }
 
       var correct = 0;
@@ -54,7 +56,31 @@ function isChecked (){
     if ( Q5Yes == true ) {correct++;} else if (Q5No == true){wrong++;}else {unanswerd++;};
     if ( Q6Yes == true ) {correct++;} else if (Q6No == true){wrong++;}else {unanswerd++;};
     if ( Q7Yes == true ) {correct++;} else if (Q7No == true){wrong++;}else {unanswerd++;};
-
-    alert("Correct answers:"+correct +"   "+"Wrong answers:"+ wrong + "   "+ "Unanswerd:"+unanswerd);
+    
+    
+    // alert("Correct answers:"+correct +"   "+"Wrong answers:"+ wrong + "   "+ "Unanswerd:"+unanswerd);
+    $('#ca').text(correct);
+    $('#wa').text(wrong);
+    $('#ua').text(unanswerd);
 };
+
+$('#test').click(function() {
+    myStopFunction()
+})
+
+
+    $(this).parent().hide();
+    $('#shadowbox').hide();
+    $('#banner').hide();
+  		
+            
+        //     $('#close').click(function() {
+        //         $('#shadowbox, #banner').hide();   
+        //    });
+           
+           
+});
+
+
+
 
